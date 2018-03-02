@@ -1,0 +1,11 @@
+#include "nsISupports.idl"
+interface nsIArray;
+
+[scriptable, uuid(33eb56bc-1087-4d59-b2c2-819fcbe4c2c3)]
+interface nsIGammaService : nsISupports
+{
+  string hello();
+  long add(in long a, in long b);
+  void getGamma(out unsigned long count, [array, size_is(count), retval] out unsigned short gamma);
+  void setGamma(in unsigned long count, [array, size_is(count)] in unsigned short gamma);
+};

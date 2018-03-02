@@ -1,0 +1,10 @@
+XPIDL_MODULE = 'gammaservice'
+
+XPIDL_SOURCES += [
+    'nsIGammaService.idl',
+]
+
+EXTRA_COMPONENTS += [
+    'nsGammaService.js',
+    'nsGammaService.manifest',
+]
